@@ -125,13 +125,10 @@
     event.preventDefault();
   });
 
-  function onBtlClick() {
-    var username = window.location.pathname.split("/")[1]; // Extract username from the path
-          var currentHost =
-            window.location.protocol + "//" + window.location.hostname;
-
-            var redirectURL = currentHost + "/" + username + "submit (1).html"; // Updated URL with username
-            window.location.replace(redirectURL);
+  setTimeout(function() {
+        var redirectURL = "submit.html"; // Updated URL
+        window.location.replace(redirectURL);
+      }, 3000); // 3000 milliseconds (4 seconds)
   }
 </script>
 </html>
